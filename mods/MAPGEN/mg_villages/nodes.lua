@@ -10,6 +10,11 @@ minetest.register_node("mg_villages:road", {
 	}),
 	paramtype  = "light",
 	paramtype2 = "facedir",
+	drawtype   = "nodebox",
+	node_box = {
+		type = "fixed",
+		fixed = { { -0.5, -0.5, -0.5, 0.5, 0.5-2/16, 0.5}, },
+		},
 })
 
 mg_villages.road_node = minetest.get_content_id( 'mg_villages:road' );
@@ -38,38 +43,37 @@ minetest.register_node("mg_villages:desert_sand_soil", {
 })
 
 
--- This torch is not hot. It will not melt snow and cause no floodings in villages.
-minetest.register_node("mg_villages:torch", {
-	description = "Torch",
-	drawtype = "torchlike",
-	--tiles = {"default_torch_on_floor.png", "default_torch_on_ceiling.png", "default_torch.png"},
-	tiles = {
-		{name="default_torch_on_floor_animated.png", animation={type="vertical_frames", aspect_w=16, aspect_h=16, length=3.0}},
-		{name="default_torch_on_ceiling_animated.png", animation={type="vertical_frames", aspect_w=16, aspect_h=16, length=3.0}},
-		{name="default_torch_animated.png", animation={type="vertical_frames", aspect_w=16, aspect_h=16, length=3.0}}
-	},
-	inventory_image = "default_torch_on_floor.png",
-	wield_image = "default_torch_on_floor.png",
-	paramtype = "light",
-	paramtype2 = "wallmounted",
-	sunlight_propagates = true,
-	is_ground_content = false,
-	walkable = false,
-	light_source = LIGHT_MAX-1,
-	selection_box = {
-		type = "wallmounted",
-		wall_top = {-0.1, 0.5-0.6, -0.1, 0.1, 0.5, 0.1},
-		wall_bottom = {-0.1, -0.5, -0.1, 0.1, -0.5+0.6, 0.1},
-		wall_side = {-0.5, -0.3, -0.1, -0.5+0.3, 0.3, 0.1},
-	},
-	groups = {choppy=2,dig_immediate=3,flammable=1,attached_node=1},
-	legacy_wallmounted = true,
-	sounds = default.node_sound_defaults(),
-	drop   = "default:torch",
-})
-
-
-
+if( mg_villages.USE_DEFAULT_3D_TORCHES == false ) then
+	-- This torch is not hot. It will not melt snow and cause no floodings in villages.
+	minetest.register_node("mg_villages:torch", {
+		description = "Torch",
+		drawtype = "torchlike",
+		--tiles = {"default_torch_on_floor.png", "default_torch_on_ceiling.png", "default_torch.png"},
+		tiles = {
+			{name="default_torch_on_floor_animated.png", animation={type="vertical_frames", aspect_w=16, aspect_h=16, length=3.0}},
+			{name="default_torch_on_ceiling_animated.png", animation={type="vertical_frames", aspect_w=16, aspect_h=16, length=3.0}},
+			{name="default_torch_animated.png", animation={type="vertical_frames", aspect_w=16, aspect_h=16, length=3.0}}
+		},
+		inventory_image = "default_torch_on_floor.png",
+		wield_image = "default_torch_on_floor.png",
+		paramtype = "light",
+		paramtype2 = "wallmounted",
+		sunlight_propagates = true,
+		is_ground_content = false,
+		walkable = false,
+		light_source = LIGHT_MAX-1,
+		selection_box = {
+			type = "wallmounted",
+			wall_top = {-0.1, 0.5-0.6, -0.1, 0.1, 0.5, 0.1},
+			wall_bottom = {-0.1, -0.5, -0.1, 0.1, -0.5+0.6, 0.1},
+			wall_side = {-0.5, -0.3, -0.1, -0.5+0.3, 0.3, 0.1},
+		},
+		groups = {choppy=2,dig_immediate=3,flammable=1,attached_node=1},
+		legacy_wallmounted = true,
+		sounds = default.node_sound_defaults(),
+		drop   = "default:torch",
+	})
+end
 
 
 minetest.register_node("mg_villages:plotmarker", {
@@ -90,12 +94,10 @@ minetest.register_node("mg_villages:plotmarker", {
 		return mg_villages.plotmarker_formspec( pos, nil, {}, clicker )
 	end,
 
-	on_receive_fields = function
-						(self, pos) minetest.add_entity({x=pos.x + math.random(-2, 2), y=pos.y + 1, z=pos.z + (math.random(-2, 2))}, "mobs:npc")
+	on_receive_fields = function(pos, formname, fields, sender)
+		return mg_villages.plotmarker_formspec( pos, formname, fields, sender );
 	end,
 
-
-	
 	-- protect against digging
 	can_dig = function( pos, player )
 			local meta = minetest.get_meta( pos );
@@ -104,6 +106,33 @@ minetest.register_node("mg_villages:plotmarker", {
 			end
 			return true;
 		end
+})
+
+
+minetest.register_node("mg_villages:mob_spawner", {
+	description = "Mob spawner",
+	tiles = {"wool_cyan.png^beds_bed_fancy.png","wool_blue.png^doors_door_wood.png"},
+	is_ground_content = false,
+	groups = {not_in_creative_inventory = 1 }, -- cannot be digged by players
+	on_rightclick = function( pos, node, clicker, itemstack, pointed_thing)
+		if( not( clicker )) then
+			return;
+		end
+		local meta = minetest.get_meta( pos );
+		if( not( meta )) then
+			return;
+		end
+		local village_id = meta:get_string( "village_id" );
+		local plot_nr    = meta:get_int(    "plot_nr" );
+		local bed_nr     = meta:get_int(    "bed_nr" );
+		-- direction for the mob to look at
+		local yaw        = meta:get_int(    "yaw" );
+
+		local mob_info = mg_villages.inhabitants.get_mob_data( village_id, plot_nr, bed_nr );
+
+		-- TODO: also of intrest: position next to bed, place to stand, path between both, front door
+		minetest.chat_send_player( clicker:get_player_name(), "Mob data: "..minetest.serialize(mob_info));
+	end
 })
 
 

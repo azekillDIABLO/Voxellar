@@ -575,7 +575,7 @@ mg_villages.replacements_chateau = function( housetype, pr, replacements )
       local mfs2 = mg_villages.replace_materials( replacements, pr,
 		{'stairs:stair_cobble',  'stairs:slab_cobble', 'default:cobble'},
 		{'stairs:stair_',        'stairs:slab_',       'default:'      },
-		{ 'cobble', 'brick', 'clay', 'desert_cobble', 'desert_stone', 'desert_stonebrick', 'loam', 'sandstone', 'sandstonebrick', 'stonebrick' },
+		{ 'cobble', 'brick', 'clay', 'desert_cobble', 'desert_stone', 'desert_stonebrick', 'sandstone', 'sandstonebrick', 'stonebrick' },
 		'cobble');
 
       return replacements;
@@ -904,7 +904,9 @@ mg_villages.get_replacement_table = function( housetype, pr, replacements )
 		replacements = mg_villages.get_replacement_list( housetype, pr );
 	end
 	-- it is very problematic if the torches on houses melt snow and cause flooding; thus, we use a torch that is not hot
-	table.insert( replacements, {'default:torch', 'mg_villages:torch'});
+	if( mg_villages.USE_DEFAULT_3D_TORCHES == false ) then
+		table.insert( replacements, {'default:torch', 'mg_villages:torch'});
+	end
 
 	-- make charachoal villages safe from spreading fire
 	if( not( mg_villages.use_normal_unsafe_lava )) then

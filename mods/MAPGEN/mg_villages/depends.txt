@@ -1,5 +1,4 @@
 handle_schematics
-mobs
 default
 doors?
 farming?
@@ -21,3 +20,4 @@ grounds?
 moreblocks?
 bell?
 mg?
+mob_world_interaction?

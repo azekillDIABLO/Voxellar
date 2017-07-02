@@ -6,12 +6,12 @@ mg_villages.ENABLE_VILLAGES = true;
 
 -- generate one random building for each mg_villages.INVERSE_HOUSE_DENSITY th mapchunk;
 -- set to 0 in order to disable spawning of these lone buildings outside villages
-mg_villages.INVERSE_HOUSE_DENSITY = 22;
+mg_villages.INVERSE_HOUSE_DENSITY = 4;
 
 -- cover some villages with artificial snow; probability: 1/mg_villages.artificial_snow_probability
-mg_villages.artificial_snow_probability = 100000;
+mg_villages.artificial_snow_probability = 10;
 
--- if set to true, soil around villages will get special soil-snow instead of plant + snow cover
+-- if set to true, soil around villaes will get special soil-snow instead of plant + snow cover
 mg_villages.use_soil_snow = false;
 
 -- only place roads if there are at least that many buildings in the village
@@ -24,10 +24,10 @@ mg_villages.VILLAGE_DETECT_RANGE = 400;
 
 -- if set to true, only players which have the mg_villages priv can use the "/visit <village nr>"
 -- command which allows teleporting to the village with the given number
-mg_villages.REQUIRE_PRIV_FOR_TELEPORT = not true;
+mg_villages.REQUIRE_PRIV_FOR_TELEPORT = false;
 
 -- if set to true, players cannot modify spawned villages without buying the house from the village first
-mg_villages.ENABLE_PROTECTION = not true;
+mg_villages.ENABLE_PROTECTION = true;
 
 -- the first village - the one the player spawns in - will be of this type
 mg_villages.FIRST_VILLAGE_TYPE = 'medieval';
@@ -35,7 +35,7 @@ mg_villages.FIRST_VILLAGE_TYPE = 'medieval';
 -- the mapgen will disregard mapchunks where min.y > mg_villages.MAX_HEIGHT_TREATED;
 -- you can set this value to 64 if you have a slow machine and a mapgen which does not create extreme mountains
 -- (or if you don't care if extreme mountains may create burried villages occasionally)
-mg_villages.MAX_HEIGHT_TREATED = 500;
+mg_villages.MAX_HEIGHT_TREATED = 200;
 
 -- choose the debug level you want
 mg_villages.DEBUG_LEVEL = mg_villages.DEBUG_LEVEL_NORMAL
@@ -43,6 +43,10 @@ mg_villages.DEBUG_LEVEL = mg_villages.DEBUG_LEVEL_NORMAL
 -- if set to true (or anything else but nil or false), highlandpools by paramat (see
 -- https://forum.minetest.net/viewtopic.php?t=8400) will be created
 mg_villages.CREATE_HIGHLANDPOOLS = true
+
+-- Torches are replaced by mg_villages:torch - which does not melt snow. If you want to use the normal
+-- torches from minetest_game, set this to true.:w!
+mg_villages.USE_DEFAULT_3D_TORCHES = true;
 
 -- background image for the /vmap command
 -- RealTest comes with a diffrent texture
@@ -151,6 +155,16 @@ mg_villages.prices = {
 
 	-- chateaus are expensive
 	chateau        = "default:diamondblock 5",
+
+	-- one mese crystal per square meter in the spawn town :-)
+	empty6x12      = "default:mese_crystal 72",
+	empty8x8       = "default:mese_crystal 64",
+	-- a large plot costs mese blocks
+	empty16x16     = "default:mese 56",
+	-- this is just enough space to grow a tree
+        empty5x5       = "default:mese_crystal 12",
+	-- nobody is supposed to buy the spawn building...except for the admin
+	spawn          = "nyancat:nyancat 99",
 }
 
 
@@ -172,8 +186,8 @@ mg_villages.VILLAGE_CHECK_COUNT = 1
 --mg_villages.VILLAGE_MAX_SIZE = 40
 mg_villages.VILLAGE_CHANCE = 28
 -- min and max size are only used in case of them beeing not provided by the village type (see buildings.lua)
-mg_villages.VILLAGE_MIN_SIZE = 15
-mg_villages.VILLAGE_MAX_SIZE = 150 --55
+mg_villages.VILLAGE_MIN_SIZE = 25
+mg_villages.VILLAGE_MAX_SIZE = 90 --55
 mg_villages.FIRST_ROADSIZE = 3
 mg_villages.BIG_ROAD_CHANCE = 0
 

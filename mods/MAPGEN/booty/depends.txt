@@ -1,5 +1,0 @@
-default
-wool?
-farming?
-mobs?
-status?
