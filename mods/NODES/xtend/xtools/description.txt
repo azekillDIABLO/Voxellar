@@ -1,0 +1,5 @@
+Create tools from the artificial crystals and diamonds.
+
+It is possible to craft all default tools including the diamond hoe from industrial diamonds (from xIndustrial) with the known tool recipes using industrial diamonds. The results are the default diamond tools.
+
+Since it is not possible to create farming:cotton from default:wool but it is possible to create default:wool from farming:cotton I decided to fill that gap. With xTools it is possible to create farming:cotton from group:wool.

@@ -1,0 +1,13 @@
+Available mods:
+
+xCoal        Adds charcoal and a compressed coal block to Minetest
+xFurniture   A lot of objects that can be used for decoration
+xIndustrial  Industrial diamonds and molded Mese crystals
+xTools       Craft tools from xIndustrial’s artificial things
+xVessels     Implements an unllimited lava brazier into the game
+
+And xtend_default as dependency in order to run the other mods
+
+If any of the mods is missing or not working with the current release version
+of Minetest go to <https://github.com/4w/xtend> and check for updates of the
+mod pack or individual mods.

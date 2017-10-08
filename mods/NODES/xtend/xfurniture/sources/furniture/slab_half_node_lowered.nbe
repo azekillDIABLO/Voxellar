@@ -1,0 +1,9 @@
+MINETEST NODEBOX EDITOR
+PARSER 2
+NAME test
+
+NODE Slab (Half Node, Lowered)
+POSITION 0 0 0
+NODEBOX lowered_slab -0.5 -1 -0.5 0.5 -0.5 0.5
+END NODE
+

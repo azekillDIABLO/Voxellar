@@ -1,0 +1,21 @@
+# vim: set ft=settingtypes:
+
+example_int_single (Single integer example) int 5
+example_int_limited (Range integer example) int 5 1 9
+example_string (Example for a string) string This is some text here.
+example_bool_true (Boolean true) bool true
+example_bool_false (Boolean false) bool false
+example_float (Floating point number) float 1.235E43
+example_enum (ENUM example) enum default value1,value2,value3
+example_path (Example for a path) path /home/user/file/location.bin
+example_key (Key example) key F3
+example_flags (Flags example) flags default flag1,flag2,flag3
+
+# Descriptive comment
+#
+# This comment will be shown as description.
+#
+# Official documentation on nopise_params says: “TODO: these are
+# currently treated like strings”
+example_noise_params (Some noise parameters) noise_params 1,2,[3-8],1
+

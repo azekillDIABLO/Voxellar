@@ -1,0 +1,5 @@
+Create industrial items for later use.
+
+Because the process is rather complex please see the following online document for a little howto.
+
+https://github.com/dsohler/minetest-xtend/blob/master/xindustrial/README.md

@@ -1,0 +1,51 @@
+[Debugging]
+
+# Show debug messages
+#
+# Output debug messages (verbose status information) into
+# the shell Minetest was started from
+xtend_default_debug (Show debug messages) bool true
+
+# Format for debug output
+#
+# This string formats the debug output. The following
+# variables are supported.
+#
+# +i = informational text to be shown
+# +m = the mod's name in lowercase
+# +M = the mod's name in UPPERCASE
+# +n = a newline character
+# +t = time in 24h format
+#
+# Newline at the end of the string is implied and should
+# be omited except you want to place a second one.
+xtend_default_debug_format (Format for debug output) string [+m] +i
+
+
+[Colorization]
+
+# Colorize defined output
+#
+# Some xTend enabled mods might create some output that
+# can be colored if wanted. If you don’t want the output
+# to be colored disable it here.
+xtend_default_enable_colorization (Enable colorization) bool true
+
+# Color that will be used for coloring
+#
+# If enabled this color will be used to color the text.
+# 
+# Only use hexadecimal code here.
+xtend_default_colorization_color (Color for colored text) string 729fcf
+
+# Color that will be used for resetting the colorization
+#
+# If enabled this color will be used to reset the color.
+# Since Minetest does not provide aproper “reset color”
+# function this will be used to “reset” the color.
+#
+# If you changed the default text color set that to the
+# same value as your default text color.
+#
+# Only use hexadecimal code here.
+xtend_default_reset_color (Reset color) string ffffff

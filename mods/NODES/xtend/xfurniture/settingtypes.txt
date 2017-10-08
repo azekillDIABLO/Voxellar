@@ -1,0 +1,119 @@
+[Object properties]
+
+# Amount of objects returned from crafting
+#
+# Crafting is quite easy and usually needs only 3 to 5 nodes so
+# returning 4 objects is fair.
+xfurniture_crafting_yield (Crafting yield) int 4
+
+# When uncrafting an object it’s base nodes are returned.
+#
+# Most recipes require 3 to 5 nodes to return the default of 4
+# objects. So returning one node for one object is a good value.
+xfurniture_uncraft_yield (Uncraft yield) int 1
+
+# Transfer base nodes’ light_source value to the object
+#
+# Some base nodes have a light_source value set so they emit
+# light of a defined level. By default the objects crafted from
+# said nodes will have the same light_source value set. Set
+# to false if you don’t want that.
+#
+# Please note that already placed nodes are not affected by
+# that value. You need to update the lighting of the block
+# where the node is placed in.
+xfurniture_use_light_source (Use light_source value) bool true
+
+# Optical indent for placing window stuff
+#
+# If you use vertical slabs or one of the moreblocks "cutted
+# blocks" from the circular saw as walls for your buildings
+# you might want to place window stuff there, too.
+#
+# This setting allows you to do that. 0 is the default and
+# does not change anything. Every other number is an 16th
+# fraction of the node. The stuff gets set back by that
+# fraction.
+#
+# For example: If you use slabs as walls, you weant to set
+# this value to 8, because the nodebox of a slabs is half the
+# size of a regular node.
+xfurniture_window_stuff_indent (Optical indent for window stuff) int 0 0 16
+
+
+[Mod configuration]
+
+# Hide objects from craftguide/creative inventory/etc.
+#
+# Because there are a lot of nodes created by xFurniture (a lot
+# of objects each created with all supported nodes) special
+# inventories would be cluttered with hundreds and hundreds of
+# xFurniture objects.
+#
+# For not overloading those special inventories (craftguides,
+# creative inventories, and so on) this option allows to hide
+# all of the xfurniture objects from those inventories if it is
+# supported by the particular inventory.
+xfurniture_hide_objects (Hide objects from special inventories) bool false
+
+# Define what objects to register
+#
+# Maybe not all users want to have all of the objects to be
+# registered. You might like the window stuff being added but
+# do not care about the other stuff? Just set the flags as
+# you like them.
+# 
+# Please note that the special value “all” is not re-settable
+# once changed to one or more of the possible flags, you need
+# to restore the default of this configuration option.
+xfurniture_objects_to_register (Objects to register) flags all chairs,tables,window_stuff,benches,couches,stairs_slabs,walls,temporary_solutions
+
+# Regex-based node blacklist
+#
+# The blacklist defines what nodes out of all the supported
+# and loaded mods are not to be used. The list gets separated
+# by a space, a number sign, and another space (that is the
+# string “ # ” sans quotes).
+#
+# Each “section” represents one regular expression defining
+# a filter that will be applied when loading the nodes and
+# thus makes it possible to ignore some nodes.
+#
+# For example if you want to ignore all nodes from the
+# `default` mod that are dirt with something applied you
+# use the following.
+#
+#    default:dirt_with_.*
+#
+# When you want to ignore this and all stones with stuff
+# in them (i.e. the ores) you use this:
+#
+#    default:dirt_with_.* # default:stone_with_.*
+#
+# But this could be generalized and combined to this:
+#
+#    default:%w+_with_.*
+#
+# This will match all default:whatever_with_... nodes.
+#
+# See <https://www.lua.org/manual/5.3/manual.html#6.4.1> for
+# a definition of Lua regex patterns.
+#
+# Hint: The less different entries you make here the
+# faster the mod will load.
+xfurniture_blacklist (Node blacklist) string
+
+
+# Additional nodes to use
+#
+# This is a space-separated list of node IDs from nodes
+# you want to add in addition to the already loaded
+# nodes from the supported mods.
+#
+# Make sure that the mods are already loaded before
+# xFurniture loads. This can be granted for `default`
+# only and has to be seen as unreliable as long as
+# xFurniture does not (opt-)depent on that mod.
+#
+# Better open an issue at GitHub.
+xfurniture_additional_nodes (Additional nodes) string

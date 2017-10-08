@@ -1,0 +1,15 @@
+MINETEST NODEBOX EDITOR
+PARSER 2
+NAME Couch Corner Frame
+
+NODE node_1
+POSITION 0 0 0
+NODEBOX top -0.5 -0.375 0.375 0.5 -0.3125 0.625
+NODEBOX right 0.375 -0.375 -0.5 0.625 -0.3125 0.5
+NODEBOX top_left_foot -0.5 -0.5 0.375 -0.375 -0.375 0.625
+NODEBOX top_right_foot 0.375 -0.5 0.375 0.625 -0.3125 0.625
+NODEBOX bottom_left_foot -0.5 -0.5 -0.5 -0.375 -0.3125 -0.375
+NODEBOX bottom_right_foot 0.375 -0.5 -0.5 0.625 -0.375 -0.375
+NODEBOX placement_helper -0.4375 -0.25 -0.4375 0.375 -0.1875 0.375
+END NODE
+

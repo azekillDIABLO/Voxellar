@@ -1,0 +1,52 @@
+
+moreores_tin_chunk_size = 7
+
+moreores_silver_chunk_size = 11
+
+moreores_mithril_chunk_size = 11
+
+
+
+moreores_tin_ore_per_chunk = 3
+
+moreores_silver_ore_per_chunk = 4
+
+moreores_mithril_ore_per_chunk = 3 
+
+moreores_tin_min_depth = -31000
+
+moreores_silver_min_depth = -31000
+
+moreores_mithril_min_depth = -31000
+
+
+moreores_tin_max_depth = 8
+
+moreores_silver_max_depth = -2
+
+moreores_mithril_max_depth = -512
+
+
+moreores_rhodochrosite_chunk_size = 11
+
+
+
+moreores_rhodochrosite_ore_per_chunk = 3 
+
+moreores_rhodochrosite_min_depth = -31000
+moreores_rhodochrosite_max_depth = -512
+
+
+moreores_spectrite_chunk_size = 11
+
+
+
+moreores_spectrite_ore_per_chunk = 3 
+
+moreores_spectrite_min_depth = -31000
+moreores_spectrite_max_depth = -512
+
+
+
+
+

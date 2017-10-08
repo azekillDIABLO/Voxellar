@@ -1,0 +1,64 @@
+[Industrial Diamonds]
+
+# Industrial diamond grit output.
+#
+# By default when creating industrial diamond grit the output will
+# be 8 pieces. This is more than enough for creating industrial
+# diamonds. Consider lowering the value to 4 for not being too
+# imbalanced. Diamonds should stay worthy!
+xindustrial_industrial_diamond_grit_output (Grit output) int 8
+
+# Amount of raw industial diamonds from crafting.
+#
+# By default you get 4 raw industrial diamonds from crafting them
+# with the needed materials. If you want to keep diamonds worthy
+# lower the value to 2. But I think 4 is a good value.
+xindustrial_raw_industrial_diamond_output (Crafting yield) int 4
+
+# Duation it takes to cook one industrial diamond
+xindustrial_industrial_diamond_cooktime (Cook time) int 20
+
+
+[Molded Mese Crystals]
+
+# The amount of molds created at once when crafting them.
+xindustrial_mese_molds_output (Number of molds created) int 5
+
+# Mese powder items returned when crafting the powder.
+#
+# This renders Mese pretty much worthless if set too high. Keep in
+# mind that higher values cause heavy imbalace to the gameplay
+# because Mese powder is the base ingredient for molded Mese
+# crystals. With 8 you already get a good amount of it ...
+xindustrial_mese_powder_output (Amount of Mese powder returned) int 8
+
+# Duration for cooking one molded Mese crystal
+xindustrial_molded_mese_crystal_cooktime (Cooktime) int 4
+
+
+[*Crafting yield]
+
+# Number of molded Mese crystals returned from one mold.
+#
+# This should stay at 1 because first: it makes sense (one mold
+# equals in one molded crystal), and second: any other value would
+# make this even more imbalanced.
+xindustrial_molded_mese_crystal_output (Molded Mese crystals) int 1
+
+# Amount of loosed cobblestone returned from crafting it one time.
+xindustrial_loosed_cobblestone_output (Loosed cobblestone) int 9
+
+# Amount of imoured Mese powder returned from crafting it one time.
+xindustrial_impured_mese_powder_output (Impured Mese powder) int 9
+
+
+[*Usage with other mods]
+
+[**Mesecons]
+
+# When creating Mesecon wires from molded Mese crystals by default
+# 18 pieces are returned (same amount as introduced by the mod).
+xindustrial_mesecons_output (Number of Mesecons wires returned) int 18
+
+# When cooking Mesecon wires by default it takes 15 units, too.
+xindustrial_mesecons_cooktime (Duration it takes to cook the Mesecons) int 15

@@ -1,0 +1,10 @@
+MINETEST NODEBOX EDITOR
+PARSER 2
+NAME Window Sill End Part Right
+
+NODE node_1
+POSITION 0 0 0
+NODEBOX end_part_right_top -0.5 0.375 0.1875 -0.25 0.5 0.5
+NODEBOX end_part_right_end -0.375 0.25 0.1875 -0.25 0.4375 0.5
+END NODE
+

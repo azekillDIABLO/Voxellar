@@ -1,0 +1,45 @@
+## Update shape ABM
+
+# Enable or disable the automatic update of the shape of nodes at the surface.
+natural_slopes.enable_surface_update (Timed surface update) bool true
+
+# The surface update will check one surface node every X seconds.
+natural_slopes.surface_update_interval (Timed surface update interval) float 5.0 0
+
+## Update shape on walk
+
+# Enable or disable shape update when walking on blocks (requires poschangelib mod).
+natural_slopes.enable_shape_on_walk (Enable sliding by walking on edges) bool true
+
+
+## Nodes
+
+# Register slopes for the node declared in default mod. Disable it if you want to use
+# natural_slopes only as a library for other mods.
+natural_slopes.register_default_slopes (Register slopes for default nodes) bool true
+
+
+## Update shape on world generation
+
+# Enable or disable shape update when the world is generated.
+# This will probably put a lot of pressure on the server. Hopefully it doesn't happen that frequently.
+natural_slopes.enable_shape_on_generate (Shape update on generation) bool true
+
+# Inverted chance factor on generation. The lesser, the more likely the node will be
+# generated in their updated shape. 0.1 means 10 time more likely.
+natural_slopes.update_shape_generate_factor (Generation factor) float 0.05 0
+
+# Skip n nodes when generating an area. The higher, the less nodes can be updated but it dramatically saves server resources.
+natural_slopes.update_shape_generate_skip (Generation skip nodes) int 0 0
+
+## Update shape on dig and place
+
+# Enable or disable shape update of neighbor nodes when one is placed or updated.
+natural_slopes.enable_shape_on_dig_place (Shape update on dig and place) bool true
+
+
+## Rendering
+
+# Enable smooth rendering instead of cubic. It will show some disconnections at some
+# points that won't be fixed and may be visually misleading with heights.
+natural_slopes.smooth_rendering (Smooth but glitched rendering) bool false

@@ -1,0 +1,3 @@
+Probably the most simple and complex at the same time furniture mod
+
+Create multiple furniture items from pretty much all available nodes.

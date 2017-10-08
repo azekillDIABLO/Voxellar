@@ -1,0 +1,512 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: xFurniture\n"
+"POT-Creation-Date: 2017-08-18 21:32+0200\n"
+"PO-Revision-Date: 2017-08-18 21:34+0200\n"
+"Last-Translator: \n"
+"Language-Team: Dirk Sohler\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.0.3\n"
+"X-Poedit-Basepath: ../..\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: _xtend.t\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: furniture/benches.lua:8
+msgid "Simple Bench Left Part"
+msgstr "Einfache Bank linkes Endstück"
+
+#: furniture/benches.lua:21
+msgid "Simple Bench Right Part"
+msgstr "Einfache Bank rechtes Endstück"
+
+#: furniture/benches.lua:34
+msgid "Simple Bench Inner Part"
+msgstr "Einfache Bank Zwischenstück"
+
+#: furniture/benches.lua:44
+msgid "Simple Bench Inner Pole Part"
+msgstr "Einfache Bank Mittelteil"
+
+#: furniture/chairs.lua:8
+msgid "Simple Chair"
+msgstr "Einfacher Stuhl"
+
+#: furniture/chairs.lua:21
+msgid "Simple Chair Seat Cover"
+msgstr "Sitzbezug für einfache Stühle"
+
+#: furniture/couches.lua:8
+msgid "Couch U Frame"
+msgstr "U-Couchrahmen"
+
+#: furniture/couches.lua:22
+msgid "Couch Bars Frame"
+msgstr "Balken-Couchrahmen"
+
+#: furniture/couches.lua:35
+msgid "Couch Corner Frame"
+msgstr "Eck-Couchrahmen"
+
+#: furniture/couches.lua:49
+msgid "Couch Left End Seat"
+msgstr "Couch-Endsitz (links)"
+
+#: furniture/couches.lua:58
+msgid "Couch Right End Seat"
+msgstr "Couch-Endsitz (rechts)"
+
+#: furniture/couches.lua:67
+msgid "Couch Center Seat"
+msgstr "Couch-Mittelsitz"
+
+#: furniture/couches.lua:75
+msgid "Couch Corner Seat (Regular)"
+msgstr "Normaler Couch-Ecksitz"
+
+#: furniture/couches.lua:84
+msgid "Couch Corner Seat (Inverted)"
+msgstr "Umgedrehter Couch-Ecksitz"
+
+#: furniture/recipe_patterns.lua:3
+msgid "xFurniture Indicator"
+msgstr "xFurniture-Indikator"
+
+#: furniture/recipe_patterns.lua:4
+msgid "Benches & Couches"
+msgstr "Bänke & Couchen"
+
+#: furniture/recipe_patterns.lua:5
+msgid "Interior"
+msgstr "Einrichtung"
+
+#: furniture/recipe_patterns.lua:6
+msgid "Window Stuff"
+msgstr "Fenster-Dinge"
+
+#: furniture/recipe_patterns.lua:7
+msgid "Stairs and Slabs"
+msgstr "Treppen und Stufen"
+
+#: furniture/recipe_patterns.lua:8
+msgid "Walls"
+msgstr "Wände"
+
+#: furniture/recipe_patterns.lua:9 furniture/recipe_patterns.lua:10
+msgid "Unused"
+msgstr "Ungenutzt"
+
+#: furniture/recipe_patterns.lua:11
+msgid "Temporary Solutions"
+msgstr "Übergangslösungen"
+
+#: furniture/stairs_slabs.lua:8
+msgid "Stair (Two Steps)"
+msgstr "Treppe (zwei Stufen)"
+
+#: furniture/stairs_slabs.lua:16
+msgid "Stair (Two Steps, Inset Corner)"
+msgstr "Treppe (zwei Stufen, innere Ecke)"
+
+#: furniture/stairs_slabs.lua:25
+msgid "Stair (Two Steps, Outset Corner)"
+msgstr "Treppe (zwei Stufen, äußere Ecke)"
+
+#: furniture/stairs_slabs.lua:34
+msgid "Stair (Three Steps)"
+msgstr "Treppe (drei Stufen)"
+
+#: furniture/stairs_slabs.lua:43
+msgid "Stair (Three Steps, Inset Corner)"
+msgstr "Treppe (drei Stufen, innere Ecke)"
+
+#: furniture/stairs_slabs.lua:54
+msgid "Stair (Three Steps, Outset Corner)"
+msgstr "Treppe (drei Stufen, äußere Ecke)"
+
+#: furniture/stairs_slabs.lua:64
+msgid "Slab (Half Node)"
+msgstr "Absatz (halber Node)"
+
+#: furniture/stairs_slabs.lua:71
+msgid "Slab (Half Node, Lowered)"
+msgstr "Absatz (halber Node, abgesenkt)"
+
+#: furniture/tables.lua:8
+msgid "Simple Table"
+msgstr "Einfacher Tisch"
+
+#: furniture/tables.lua:20
+msgid "Small Table"
+msgstr "Kleiner Tisch"
+
+#: furniture/tables.lua:36
+msgid "Large Table Corner"
+msgstr "Große Tischecke"
+
+#: furniture/tables.lua:44
+msgid "Large Table Edge"
+msgstr "Große Tischkante"
+
+#: furniture/tables.lua:51
+msgid "Large Table Inner Part"
+msgstr "Großer Tisch-Innenteil"
+
+#: furniture/tables.lua:59
+msgid "Office Table"
+msgstr "Bürotisch"
+
+#: furniture/tables.lua:73
+msgid "Office Table Side Extension Left"
+msgstr "Seitliche Bürotischverlängerung links"
+
+#: furniture/tables.lua:85
+msgid "Office Table Side Extension Right"
+msgstr "Seitliche Bürotischverlängerung rechts"
+
+#: furniture/temporary_solutions.lua:17
+msgid "Two Steps Upside-down Stair"
+msgstr "Treppe (zwei Stufen, umgedreht)"
+
+#: furniture/temporary_solutions.lua:25
+msgid "Two Steps Upside-down Stair (Inset Corner)"
+msgstr "Treppe (zwei Stufen, umgedreht, innere Ecke)"
+
+#: furniture/temporary_solutions.lua:34
+msgid "Two Steps Upside-down Stair (Outset Corner)"
+msgstr "Treppe (zwei Stufen, umgedreht, äußere Ecke)"
+
+#: furniture/temporary_solutions.lua:43
+msgid "Three Steps Upside-down Stair"
+msgstr "Treppe (drei Stufen, umgedreht)"
+
+#: furniture/temporary_solutions.lua:52
+msgid "Three Steps Upside-down Stair (Inset Corner)"
+msgstr "Treppe (drei Stufen, umgedreht, innere Ecke)"
+
+#: furniture/temporary_solutions.lua:63
+msgid "Three Steps Upside-down Stair (Outset Corner)"
+msgstr "Treppe (drei Stufen, umgedreht, äußere Ecke)"
+
+#: furniture/walls.lua:124
+msgid "Wall Base"
+msgstr "Wandbasis"
+
+#: furniture/walls.lua:129
+msgid "Wall Extension"
+msgstr "Wanderweiterung"
+
+#: furniture/walls.lua:134
+msgid "Wall Top"
+msgstr "Wandaufsatz"
+
+#: furniture/walls.lua:140
+msgid "Wall End Base"
+msgstr "Endwandbasis"
+
+#: furniture/walls.lua:145
+msgid "Wall End Extension"
+msgstr "Endwanderweiterung"
+
+#: furniture/walls.lua:150
+msgid "Wall End Top"
+msgstr "Endwandaufsatz"
+
+#: furniture/walls.lua:156
+msgid "Wall Corner Base"
+msgstr "Eckwandbasis"
+
+#: furniture/walls.lua:161
+msgid "Wall Corner Extension"
+msgstr "Eckwanderweiterung"
+
+#: furniture/walls.lua:166
+msgid "Wall Corner Top"
+msgstr "Eckwandaufsatz"
+
+#: furniture/walls.lua:172
+msgid "Wall T-Junction Base"
+msgstr "Wandbasis T-Kreuzung"
+
+#: furniture/walls.lua:177
+msgid "Wall T-Junction Extension"
+msgstr "Wanderweiterung T-Kreuzung"
+
+#: furniture/walls.lua:182
+msgid "Wall T-Junction Top"
+msgstr "Wandaufsatz T-Kreuzung"
+
+#: furniture/walls.lua:188
+msgid "Pole (Standalone Base)"
+msgstr "Pfostenbasis (alleinstehend)"
+
+#: furniture/walls.lua:193
+msgid "Pole (Standalone Extension)"
+msgstr "Pfostenerweiterung (alleinstehend)"
+
+#: furniture/walls.lua:198
+msgid "Pole (Standalone Top)"
+msgstr "Pfostenaufsatz (alleinstehend)"
+
+#: furniture/walls.lua:204
+msgid "Pole (Wall Base)"
+msgstr "Pfostenwandbasis"
+
+#: furniture/walls.lua:209
+msgid "Pole (Wall Extension)"
+msgstr "Pfostenwanderweiterung"
+
+#: furniture/walls.lua:214
+msgid "Pole (Wall Top)"
+msgstr "Pfostenwandaufsatz"
+
+#: furniture/walls.lua:220
+msgid "Pole (Wall Corner Base)"
+msgstr "Pfosteneckwandbasis"
+
+#: furniture/walls.lua:225
+msgid "Pole (Wall Corner Extension)"
+msgstr "Pfosteneckwanderweiterung"
+
+#: furniture/walls.lua:230
+msgid "Pole (Wall Corner Top)"
+msgstr "Pfosteneckwandaufsatz"
+
+#: furniture/walls.lua:236
+msgid "Pole (T-Junction Base)"
+msgstr "Pfostenwandbasis T-Kreuzung"
+
+#: furniture/walls.lua:241
+msgid "Pole (T-Junction Extension)"
+msgstr "Pfostenwanderweiterung T-Kreuzung"
+
+#: furniture/walls.lua:246
+msgid "Pole (T-Junction Top)"
+msgstr "Pfostenwandaufsatz T-Kreuzung"
+
+#: furniture/walls.lua:252
+msgid "Pole (End Wall Base)"
+msgstr "Pfostenendwandbasis"
+
+#: furniture/walls.lua:257
+msgid "Pole (End Wall Extension)"
+msgstr "Pfostenendwanderweiterung"
+
+#: furniture/walls.lua:262
+msgid "Pole (End Wall Top)"
+msgstr "Pfostenendwandaufsatz"
+
+#: furniture/walls.lua:268
+msgid "Torch Holder (Wall Base, Single)"
+msgstr "Fackelhalter (Wandbasis, einseitig)"
+
+#: furniture/walls.lua:273
+msgid "Torch Holder (Wall Base, Dual)"
+msgstr "Fackelhalter (Wandbasis, beidseitig)"
+
+#: furniture/walls.lua:278
+msgid "Torch Holder (Wall Extension, Single)"
+msgstr "Fackelhalter (Wanderweiterung, einseitig)"
+
+#: furniture/walls.lua:283
+msgid "Torch Holder (Wall Extension, Dual)"
+msgstr "Fackelhalter (Wanderweiterung, beidseitig)"
+
+#: furniture/walls.lua:289
+msgid "Torch Holder (Pillared Wall Corner Base, Single)"
+msgstr "Fackelhalter (Pfostenwandbasis, einseitig)"
+
+#: furniture/walls.lua:294
+msgid "Torch Holder (Pillared Wall Corner Base, Dual)"
+msgstr "Fackelhalter (Pfostenwandbasis, beidseitig)"
+
+#: furniture/walls.lua:299
+msgid "Torch Holder (Pillared Wall Corner Extension, Single)"
+msgstr "Fackelhalter (Pfostenwanderweiterung, einseitig)"
+
+#: furniture/walls.lua:304
+msgid "Torch Holder (Pillared Wall Corner Extension, Dual)"
+msgstr "Fackelhalter (Pfostenwanderweiterung, beidseitig)"
+
+#: furniture/walls.lua:310
+msgid "Torch Holder (Standalone Pillar Base, Single)"
+msgstr "Fackelhalter (Pfostenbasis, einseitig)"
+
+#: furniture/walls.lua:315
+msgid "Torch Holder (Standalone Pillar Base, Dual Opposite)"
+msgstr "Fackelhalter (Pfostenbasis, gegenseitig)"
+
+#: furniture/walls.lua:320
+msgid "Torch Holder (Standalone Pillar Base, Dual Corner)"
+msgstr "Fackelhalter (Pfostenbasis, eckseitig)"
+
+#: furniture/walls.lua:325
+msgid "Torch Holder (Standalone Pillar Base, Three Sides)"
+msgstr "Fackelhalter (Pfostenbasis, dreiseitig)"
+
+#: furniture/walls.lua:330
+msgid "Torch Holder (Standalone Pillar Base, Four Sides)"
+msgstr "Fackelhalter (Pfostenbasis, vierseitig)"
+
+#: furniture/walls.lua:336
+msgid "Torch Holder (Standalone Pillar Extension, Single)"
+msgstr "Fackelhalter (Pfostenerweiterung, einseitig)"
+
+#: furniture/walls.lua:341
+msgid "Torch Holder (Standalone Pillar Extension, Dual Opposite)"
+msgstr "Fackelhalter (Pfostenerweiterung, gegenseitig)"
+
+#: furniture/walls.lua:346
+msgid "Torch Holder (Standalone Pillar Extension, Dual Corner)"
+msgstr "Fackelhalter (Pfostenerweiterung, eckseitig)"
+
+#: furniture/walls.lua:351
+msgid "Torch Holder (Standalone Pillar Extension, Three Sides)"
+msgstr "Fackelhalter (Pfostenerweiterung, dreiseitig)"
+
+#: furniture/walls.lua:356
+msgid "Torch Holder (Standalone Pillar Extension, Four Sides)"
+msgstr "Fackelhalter (Pfostenerweiterung, vierseitig)"
+
+#: furniture/walls.lua:367
+msgid "Torch Holder (Pillared End Wall Base, Front)"
+msgstr "Fackelhalter (Pfostenendwandbasis, vorne)"
+
+#: furniture/walls.lua:372
+msgid "Torch Holder (Pillared End Wall Base, Left)"
+msgstr "Fackelhalter (Pfostenendwandbasis, links)"
+
+#: furniture/walls.lua:377
+msgid "Torch Holder (Pillared End Wall Base, Right)"
+msgstr "Fackelhalter (Pfostenendwandbasis, rechts)"
+
+#: furniture/walls.lua:382
+msgid "Torch Holder (Pillared End Wall Base, Dual Opposite)"
+msgstr "Fackelhalter (Pfostenendwandbasis, beidseitig)"
+
+#: furniture/walls.lua:387
+msgid "Torch Holder (Pillared End Wall Base, Dual Left)"
+msgstr "Fackelhalter (Pfostenendwandbasis, eckseitig links)"
+
+#: furniture/walls.lua:392
+msgid "Torch Holder (Pillared End Wall Base, Dual Right)"
+msgstr "Fackelhalter (Pfostenendwandbasis, eckseitig rechts)"
+
+#: furniture/walls.lua:398
+msgid "Torch Holder (Pillared End Wall Extension, Front)"
+msgstr "Fackelhalter (Pfostenendwanderweiterung, vorne)"
+
+#: furniture/walls.lua:403
+msgid "Torch Holder (Pillared End Wall Extension, Left)"
+msgstr "Fackelhalter (Pfostenendwanderweiterung, links)"
+
+#: furniture/walls.lua:408
+msgid "Torch Holder (Pillared End Wall Extension, Right)"
+msgstr "Fackelhalter (Pfostenendwanderweiterung, rechts)"
+
+#: furniture/walls.lua:413
+msgid "Torch Holder (Pillared End Wall Extension, Dual Opposite)"
+msgstr "Fackelhalter (Pfostenendwanderweiterung, beidseitig)"
+
+#: furniture/walls.lua:418
+msgid "Torch Holder (Pillared End Wall Extension, Dual Left)"
+msgstr "Fackelhalter (Pfostenendwanderweiterung, eckseitig links)"
+
+#: furniture/walls.lua:423
+msgid "Torch Holder (Pillared End Wall Extension, Dual Right)"
+msgstr "Fackelhalter (Pfostenendwanderweiterung, rechts)"
+
+#: furniture/window_stuff.lua:36
+msgid "Window Screen Bars"
+msgstr "Fensterschutz-Streben"
+
+#: furniture/window_stuff.lua:50
+msgid "Window Screen Frame Part"
+msgstr "Fensterschutz-Rahmenteil"
+
+#: furniture/window_stuff.lua:57
+msgid "Window Screen Frame Corner"
+msgstr "Fensterschutz-Rahmeneckteil"
+
+#: furniture/window_stuff.lua:65
+msgid "Window Sill Sill Part"
+msgstr "Fenstersimsteil"
+
+#: furniture/window_stuff.lua:72
+msgid "Window Sill End Part Right"
+msgstr "Fenstersimsendteil rechts"
+
+#: furniture/window_stuff.lua:80
+msgid "Window Sill End Part Left"
+msgstr "Fenstersimsendteil links"
+
+#: system/crafting_addition.lua:129
+msgid "Crafting Addition for xFurniture objects"
+msgstr "Herstellzusatz für xFurniture-Objekte"
+
+#: system/get_blacklist.lua:15
+msgid "Blacklist entries: +e"
+msgstr "Blacklist-Einträge: +e"
+
+#: system/get_objects_to_create.lua:9
+msgid "all registered objects"
+msgstr "alle registrierten Objekte"
+
+#: system/get_objects_to_create.lua:19
+msgid "Objects to create: +o"
+msgstr "Zu erstellende Objekte: +o"
+
+#: system/init_information.lua:16
+msgid "Created +o objects each from +b base nodes"
+msgstr "+o Objekte aus +b Basis-Nodes erstellt"
+
+#: system/init_information.lua:21
+msgid "+n furniture nodes in +c categories"
+msgstr "+n Einrichtungs-Nodes in +c Kategorien"
+
+#: system/init_information.lua:26
+msgid "Mod fully loaded"
+msgstr "Mod komplett geladen"
+
+#: system/override_uncraftables.lua:14
+msgid "Fetching uncraftable objects"
+msgstr "Erfasse nicht craftbare Objekte"
+
+#: system/override_uncraftables.lua:30
+msgid "Replacing recipes of +o uncraftable objects"
+msgstr "Ersetze Rezepte von +o nicht craftbaren Objekten"
+
+#: system/register_furniture.lua:82
+msgid "+o made of +d"
+msgstr "+o aus +d"
+
+#~ msgid "Benches"
+#~ msgstr "Bänke"
+
+#~ msgid "all supported mods"
+#~ msgstr "alle unterstützten Mods"
+
+#~ msgid "none except default"
+#~ msgstr "keine außer Standard"
+
+#~ msgid "Mods to use: +m"
+#~ msgstr "Zu verwendende Mods: +m"
+
+#~ msgid "Tests for ignoring nodes: +t"
+#~ msgstr "Tests auf zu ignorierende Mods: +t"
+
+#~ msgid "Loading \"+o\" objects"
+#~ msgstr "Lade „+o“-Objekte"
+
+#~ msgid "Not loading \"+o\" objects due to configuration"
+#~ msgstr "Lade konfigurationsbedingt keine „+o“-Objekte"
+
+#~ msgid "Craftable xFurniture Objects (Replace wooden planks with any solid node)"
+#~ msgstr "Herstellbare xFurniture-Objekte (Holzbretter durch beliebigen festen Node ersetzen)"
+
+#~ msgid "There are currently +n objects available in total"
+#~ msgstr "Insgesamt sind derzeit +n Objekte verfügbar"

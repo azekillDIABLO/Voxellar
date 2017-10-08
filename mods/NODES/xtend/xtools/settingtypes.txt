@@ -1,0 +1,6 @@
+[Usage with other mods]
+
+[*Farming Mod]
+
+# Amount of cotton returned from one whool block
+xtools_farming_cotton_output (Cotton-from-whool yield) int 4

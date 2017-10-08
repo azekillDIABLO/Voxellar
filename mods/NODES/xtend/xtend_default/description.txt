@@ -1,0 +1,5 @@
+Helper functions for xTend mods.
+
+This mod provides some helper functions and the initiation system for xTend mods and creates the global _xtend table. All xTend mods depend on this mod.
+
+See README.md for detailed documentation.

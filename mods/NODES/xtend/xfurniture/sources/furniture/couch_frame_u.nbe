@@ -1,0 +1,16 @@
+MINETEST NODEBOX EDITOR
+PARSER 2
+NAME Couch U Frame
+
+NODE node_1
+POSITION 0 0 0
+NODEBOX U_base -0.5 -0.375 -0.625 0.5 -0.3125 -0.375
+NODEBOX U_left -0.625 -0.375 -0.5 -0.375 -0.3125 0.5
+NODEBOX U_right 0.375 -0.375 -0.5 0.625 -0.3125 0.5
+NODEBOX U_left_top_foot -0.625 -0.5 0.375 -0.375 -0.375 0.5
+NODEBOX U_right_top_foot 0.375 -0.5 0.375 0.625 -0.375 0.5
+NODEBOX U_left_bottom_foot -0.625 -0.5 -0.625 -0.375 -0.3125 -0.375
+NODEBOX U_right_bottom_foot 0.375 -0.5 -0.625 0.625 -0.3125 -0.375
+NODEBOX placement_helper -0.375 -0.25 -0.375 0.375 -0.1875 0.4375
+END NODE
+

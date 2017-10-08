@@ -1,0 +1,9 @@
+MINETEST NODEBOX EDITOR
+PARSER 2
+NAME Window Screen Frame Part
+
+NODE node_1
+POSITION 0 0 0
+NODEBOX frame_part -0.5 -0.5 0.3125 0.5 -0.3125 0.5
+END NODE
+

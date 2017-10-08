@@ -1,0 +1,51 @@
+[Charcoal]
+
+# The amount of charcoal returned from cooking one piece of wood.
+#
+# By default the value is 4 which should be enough to be worthy but
+# not too much to be too imbalanced.
+xcoal_charcoal_output (Amount of charcoal from cooking) int 4
+
+# The time it takes to cook one piece of charcoal.
+xcoal_charcoal_cooktime (Duration for cooking) int 4
+
+# The duration one single charcloal pieces fuels the oven for.
+#
+# By default this is 60 units. According to the Minetest Wiki this
+# is the same amount of units a regular lump of coal lasts.
+xcoal_charcoal_burntime (Burn time) int 60
+
+# Amount of torches created from one piece of charcoal
+#
+# When crafting torches from the default mod you get four torches
+# from one piece of coal and a stick. Charcoal torches (actually
+# the mod creates default torches from charcoal) should stay at
+# the same amount to mmaintain consistency.
+xcoal_charcoal_torches_output (Charcoal torches output) int 4
+
+
+[Compressed Coal Block]
+
+# The burn time of one compressed coal block.
+#
+# A regular coal block fuels the oven for 370 units. A compressed
+# coal block is made of 9 regular coal blocks and therefore lasts
+# for 3330 units. But ... Because it is compressed it lasts for
+# some more units because it burns slower. By default 4000 units.
+xcoal_compressed_coalblock_burntime (Burn time) int 4000
+
+# Amount of compressed coal blocks returned from crafting.
+# 
+# By default 9 coal are used to create one coal block. This mod
+# takes by default 9 coal blocks for crafting 1 compressed coal
+# block which makes absolute sense. If you want to change that
+# alter this value to whatever zou want
+xcoal_compressed_coalblock_crafting_yield (Crafting yield) int 1
+
+# Amount of coal blocks returned when uncrafting.
+#
+# When “uncrafting” a compressed coal block a defined amount of
+# regular coal blocks are returned. This value should stay at or
+# lower than 9, otherwise unlimited coal blocks can be created
+# from one compressed coal block.
+xcoal_compressed_coalblock_uncraft_yield (Uncraft yield) int 9

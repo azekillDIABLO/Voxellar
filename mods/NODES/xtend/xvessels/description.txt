@@ -1,0 +1,3 @@
+Unlimited Liquid Vessels
+
+This mod adds various vessels that act as unlimited sources of the liquids they contain when punched with an empty bucket (which will return a bucket of said liquid).

@@ -1,0 +1,5 @@
+Create charcoal and craft compressed coal blocks.
+
+Charcoal is created by cooking any type of tree trunk. It can be used as fuel for the oven and for crafting torches.
+
+A compressed coal block can be created by placing 9x9 regular coal blocks into the crafting grid. A compressed coal block can be used as fuel for the oven and for decoration.

@@ -9,13 +9,13 @@ mg_villages.ENABLE_VILLAGES = true;
 mg_villages.INVERSE_HOUSE_DENSITY = 4;
 
 -- cover some villages with artificial snow; probability: 1/mg_villages.artificial_snow_probability
-mg_villages.artificial_snow_probability = 10;
+mg_villages.artificial_snow_probability = 30;
 
 -- if set to true, soil around villaes will get special soil-snow instead of plant + snow cover
-mg_villages.use_soil_snow = false;
+mg_villages.use_soil_snow = true;
 
 -- only place roads if there are at least that many buildings in the village
-mg_villages.MINIMAL_BUILDUNGS_FOR_ROAD_PLACEMENT = 4;
+mg_villages.MINIMAL_BUILDUNGS_FOR_ROAD_PLACEMENT = 3;
 
 
 -- players without the mg_villages priv can only see villages which are less than that many blocks away
@@ -27,7 +27,7 @@ mg_villages.VILLAGE_DETECT_RANGE = 400;
 mg_villages.REQUIRE_PRIV_FOR_TELEPORT = false;
 
 -- if set to true, players cannot modify spawned villages without buying the house from the village first
-mg_villages.ENABLE_PROTECTION = true;
+mg_villages.ENABLE_PROTECTION = false;
 
 -- the first village - the one the player spawns in - will be of this type
 mg_villages.FIRST_VILLAGE_TYPE = 'medieval';
@@ -35,10 +35,15 @@ mg_villages.FIRST_VILLAGE_TYPE = 'medieval';
 -- the mapgen will disregard mapchunks where min.y > mg_villages.MAX_HEIGHT_TREATED;
 -- you can set this value to 64 if you have a slow machine and a mapgen which does not create extreme mountains
 -- (or if you don't care if extreme mountains may create burried villages occasionally)
-mg_villages.MAX_HEIGHT_TREATED = 200;
+mg_villages.MAX_HEIGHT_TREATED = 110;
 
 -- choose the debug level you want
 mg_villages.DEBUG_LEVEL = mg_villages.DEBUG_LEVEL_NORMAL
+
+-- if set to true, a water source will be added all 2-3 blocks on a field for farming;
+-- as long as you do not plan to dig up all fields, hoe them and use them manually,
+-- better keep this to "false" as that is much faster
+mg_villages.PLACE_WATER_FOR_FARMING = true
 
 -- if set to true (or anything else but nil or false), highlandpools by paramat (see
 -- https://forum.minetest.net/viewtopic.php?t=8400) will be created
@@ -76,7 +81,7 @@ mg_villages.sapling_probability[ minetest.get_content_id( 'default:sapling' )   
 mg_villages.sapling_probability[ minetest.get_content_id( 'default:junglesapling' ) ] = 40; -- jungletrees are a bit bigger and need more space
 mg_villages.sapling_probability[ minetest.get_content_id( 'default:pinesapling' )   ] = 30; 
 if( minetest.get_modpath( 'mg' )) then
-	mg_villages.sapling_probability[ minetest.get_content_id( 'mg:savannasapling'     ) ] = 30; 
+	mg_villages.sapling_probability[ minetest.get_content_id( 'mg:savannasapling'     ) ] = 35; 
 	mg_villages.sapling_probability[ minetest.get_content_id( 'mg:pinesapling'        ) ] = 35; 
 end
 mg_villages.moretrees_treelist = nil;
@@ -184,12 +189,12 @@ mg_villages.VILLAGE_CHECK_COUNT = 1
 --mg_villages.VILLAGE_CHANCE = 28
 --mg_villages.VILLAGE_MIN_SIZE = 20
 --mg_villages.VILLAGE_MAX_SIZE = 40
-mg_villages.VILLAGE_CHANCE = 28
+mg_villages.VILLAGE_CHANCE = 21
 -- min and max size are only used in case of them beeing not provided by the village type (see buildings.lua)
 mg_villages.VILLAGE_MIN_SIZE = 25
-mg_villages.VILLAGE_MAX_SIZE = 90 --55
+mg_villages.VILLAGE_MAX_SIZE = 290 --55
 mg_villages.FIRST_ROADSIZE = 3
-mg_villages.BIG_ROAD_CHANCE = 0
+mg_villages.BIG_ROAD_CHANCE = 1
 
 -- Enable that for really big villages (there are also really slow to generate)
 --[[mg_villages.VILLAGE_CHECK_RADIUS = 3

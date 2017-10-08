@@ -1,0 +1,25 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: xCoal\n"
+"POT-Creation-Date: 2017-05-06 17:54+0200\n"
+"PO-Revision-Date: 2017-05-06 17:55+0200\n"
+"Last-Translator: \n"
+"Language-Team: Dirk Sohler\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.0.1\n"
+"X-Poedit-Basepath: ../..\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-KeywordsList: _xtend.t\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: init.lua:20
+msgid "Charcoal"
+msgstr "Holzkohle"
+
+#: init.lua:65
+msgid "Compressed Coal Block"
+msgstr "Komprimierter Kohleblock"

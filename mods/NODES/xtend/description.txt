@@ -1,0 +1,11 @@
+A modpack that combines all of the xTend mods.
+
+All mods are developed for and tested in the latest non-developer release version of Minetest. Some mods provide textures or use texture masks. Those are designed in 16x16 pixels, respectively are designed for being used with textures of 16x16 pixels.
+
+All of the mods offer various configuration options. See `Settings -> Advanced Settings -> Mods` and look for the x-modnames.
+
+See indivudial mods for details.
+
+For latest updates, support, and questions visit the Github page.
+
+https://github.com/dsohler/xtend_modpack
